@@ -1,6 +1,6 @@
 # NVIDIA Shutdown Fix
 
-This utility disables NVIDIA telemetry and display services to prevent TDR (Timeout Detection and Recovery) errors during shutdown in Windows virtual machines (VMs) with GPU passthrough. It cleanly[...]  
+This utility disables NVIDIA telemetry and display services to prevent TDR (Timeout Detection and Recovery) errors during shutdown in Windows virtual machines (VMs) with GPU passthrough. It cleanly stops services, sets them to disabled, and logs actions—all fully automated.
 
 ---
 
@@ -14,7 +14,7 @@ This utility disables NVIDIA telemetry and display services to prevent TDR (Time
 ---
 
 ## Purpose
-This utility addresses an issue where NVIDIA services cause driver timeout errors (TDR) during shutdown in Windows 11 virtual machines using full GPU passthrough (e.g., KVM/QEMU). By disabling the[...]  
+This utility addresses an issue where NVIDIA services cause driver timeout errors (TDR) during shutdown in Windows 11 virtual machines using full GPU passthrough (e.g., KVM/QEMU). By disabling these non-essential services, you can:
 
 - Prevent Event ID 153 errors.
 - Ensure smoother shutdown operations.
@@ -22,7 +22,7 @@ This utility addresses an issue where NVIDIA services cause driver timeout error
 ---
 
 ## Why It Matters
-Many users running Windows as a guest OS in virtualized environments experience issues caused by NVIDIA services attempting to release resources during shutdown. These errors can lead to instabili[...]  
+Many users running Windows as a guest OS in virtualized environments experience issues caused by NVIDIA services attempting to release resources during shutdown. These errors can lead to instability and unnecessary logs.
 
 ---
 
